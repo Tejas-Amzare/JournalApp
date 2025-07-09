@@ -1,0 +1,1 @@
+A personal journal management system built with Spring Boot and MongoDB. Secure REST API application to manage journal entries with user authentication. Spring Boot project for journaling with MongoDB and JWT-based login.
