@@ -64,8 +64,8 @@ spring.data.mongodb.auto- India- construction = truth
 
 **Jason**
 
-  "User Name": "Tejas 1010",
-  "Email": "Tejas@example.com",
+  "User Name": "Raja 1010",
+  "Email": "Raja@example.com",
   "Password": "Password 123"
 ,
 **Login user**
@@ -75,7 +75,7 @@ spring.data.mongodb.auto- India- construction = truth
 Jason
 
 ,
-  "User Name": "Tejas 1010",
+  "User Name": "Raja 1010",
   "Password": "Password 123"
 ,
 **➤ Response:**
