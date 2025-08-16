@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **User Registration & Login**
 - **JWT-based Authentication**
@@ -15,7 +15,7 @@
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Java 17**
 - **Spring Boot 3**
@@ -26,7 +26,7 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 JournalApp/
 ├── config/ # Spring Security Configuration
@@ -41,7 +41,7 @@ JournalApp/
 
 ---
 
-## 🔐 Authentication Flow
+##  Authentication Flow
 
 1. Register a new user at `/api/auth/register`
 2. Login at `/api/auth/login` to receive a **JWT token**
@@ -50,7 +50,7 @@ JournalApp/
 
 ---
 
-## 🔄 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint              | Description                    | Auth Required |
 |--------|------------------------|--------------------------------|----------------|
@@ -63,7 +63,7 @@ JournalApp/
 
 ---
 
-## ⚙️ Getting Started
+## ⚙ Getting Started
 
 ### Prerequisites
 
