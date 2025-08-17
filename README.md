@@ -62,6 +62,17 @@ JournalApp/
 | DELETE | `/api/journals/{id}`   | Delete journal entry by ID     | ✅             |
 
 ---
+Architecture Overview: JournalApp
+┌──────────────┐        ┌──────────────┐         ┌──────────────┐        ┌──────────────┐
+│  Clients     │  <--  │  Controllers │  <--   │  Services    │  <--   │  Repositories│
+│ (Web / Postman)│     │ (@RestController) │     │ (@Service)  │         │ (@Repository)│
+└──────────────┘        └──────────────┘         └──────────────┘        └──────────────┘
+                                                                     ↓
+                                                              ┌──────────────┐
+                                                              │   MongoDB    │
+                                                              │ (NoSQL Store)│
+                                                              └──────────────┘
+
 
 ## ⚙ Getting Started
 
