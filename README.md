@@ -1,6 +1,5 @@
-## 📌 3. JournalApp – README  
+📌 3. JournalApp – README  
 
-```markdown
 # 📔 Journal App Backend
 
 ## 📖 Overview
