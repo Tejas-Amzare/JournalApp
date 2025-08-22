@@ -1,43 +1,39 @@
-# 📓 JournalApp
+## 📌 3. JournalApp – README  
 
-**JournalApp** is a personal journal management system built using **Spring Boot** and **MongoDB**. It provides a secure REST API for user authentication and CRUD operations on journal entries. This project is ideal for learning backend development using Java and Spring Boot with JWT authentication.
+```markdown
+# 📔 Journal App Backend
 
----
+## 📖 Overview
+A backend application for maintaining **personal journals**.  
+Users can securely **register, log in, and manage journal entries**.  
 
-##  Key Features
+## 🛠 Tech Stack
+- **Language:** Java 17  
+- **Framework:** Spring Boot 3  
+- **Database:** MySQL  
+- **Authentication:** JWT (Spring Security)  
+- **Documentation:** Swagger  
 
-- **User Registration & Login**
-- **JWT-based Authentication**
-- **Create / Read / Update / Delete Journal Entries**
-- **Spring Boot + MongoDB Integration**
-- **Clean Layered Architecture**
-- **RESTful API Design**
+## ✨ Features
+- 🔐 User Authentication (Register/Login with JWT)  
+- 📝 Create, Update, Delete journal entries  
+- 📅 Fetch all journal entries for a user  
 
----
-
-##  Tech Stack
-
-- **Java 17**
-- **Spring Boot 3**
-- **MongoDB**
-- **Spring Security + JWT**
-- **Lombok**
-- **Maven**
+## 📂 Project Structure
 
 ---
-
-##  Project Structure
-
-JournalApp/
-├── config/ # Spring Security Configuration
-├── controller/ # REST API Controllers
-├── dto/ # Data Transfer Objects
-├── exception/ # Custom Exceptions and Handlers
-├── model/ # Domain Models (User, JournalEntry)
-├── repository/ # MongoDB Repositories
-├── service/ # Business Logic Layer
-└── JournalAppApplication.java
-
+journal-app/
+┣ src/main/java/com/journalapp/
+┃ ┣ config/ # JWT Security config
+┃ ┣ controller/ # REST endpoints
+┃ ┣ entity/ # Models (User, JournalEntry)
+┃ ┣ repository/ # JPA Repositories
+┃ ┣ service/ # Business logic
+┃ ┗ JournalAppApplication.java
+┣ src/main/resources/
+┃ ┣ application.properties
+┣ pom.xml
+┗ README.md
 
 ---
 
@@ -49,6 +45,17 @@ JournalApp/
 
 
 ---
+
+## 🔑 API Endpoints (Sample)
+### Auth
+- `POST /api/auth/register` → Register  
+- `POST /api/auth/login` → Login  
+
+### Journal
+- `POST /api/journals` → Create journal entry  
+- `GET /api/journals` → Get all entries  
+- `PUT /api/journals/{id}` → Update entry  
+- `DELETE /api/journals/{id}` → Delete entry  
 
 ##  API Endpoints
 
@@ -73,33 +80,37 @@ Architecture Overview: JournalApp
                                                               │ (NoSQL Store)│
                                                               └──────────────┘
 
+## ⚙️ Setup & Installation
+1. Clone repo:  
+   ```bash
+   git clone https://github.com/Tejas-Amzare/JournalApp.git
+   cd JournalApp
 
-## ⚙ Getting Started
+2. Configure `application.properties`:  
+   ```properties
+   spring.data.mongodb.uri=mongodb://localhost:27017/journalapp
+   jwt.secret=yourSecretKey
 
-### Prerequisites
 
-- Java 17+
-- Maven
-- MongoDB (local or cloud)
+3.Run with Maven:
 
-### Setup
-
-```bash
-git clone https://github.com/Tejas-Amzare/JournalApp.git
-cd JournalApp
-mvn clean install
 mvn spring-boot:run
-Visit: http://localhost:8080
 
 📌 Notes
 Make sure MongoDB is running before you start the application.
 
-You can use Postman or Swagger UI to test endpoints.
+📸 Screenshots
+Swagger UI := (Postman API tests)
+<img width="1730" height="853" alt="1" src="https://github.com/user-attachments/assets/29da3181-8ae9-4f2a-9f16-7f4c181e6c79" />
+<img width="1713" height="588" alt="2" src="https://github.com/user-attachments/assets/b08fe267-9769-48cc-bff1-312d9b65b94c" />
+<img width="1729" height="389" alt="3" src="https://github.com/user-attachments/assets/4d62690c-f38e-4ad2-a948-2a8ccac19e64" />
 
-For secure routes, include the Authorization: Bearer <token> header
+
+
+
 
 🙋‍♂️ Author
 Tejas Gajanan Amzare
 📧 tejasamzare@gmail.com
-🔗 LinkedIn
-🔗 GitHub.
+🔗 LinkedIn -https://www.linkedin.com/in/tejas-amzare/
+
