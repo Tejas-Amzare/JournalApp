@@ -137,11 +137,12 @@ journal-app/
 
 ### Steps
 1. Clone the repository:
-
+```bash
 git clone https://github.com/Tejas-Amzare/JournalApp.git
 cd JournalApp
-Configure application.properties:
 
+
+Configure application.properties:
 
 spring.data.mongodb.uri=mongodb://localhost:27017/journalapp
 jwt.secret=yourSecretKey
@@ -150,7 +151,12 @@ Run the application:
 
 mvn spring-boot:run
 💻 Usage Examples
+
+```
+
 Register a User
+
+```bash
 
 POST /api/auth/register
 Content-Type: application/json
@@ -161,7 +167,11 @@ Content-Type: application/json
   "password": "Password123"
 }
 
+```
+
 Login
+
+```bash
 
 POST /api/auth/login
 Content-Type: application/json
@@ -170,8 +180,11 @@ Content-Type: application/json
   "username": "johndoe",
   "password": "Password123"
 }
+
+```
 Create a Journal Entry (Authorized)
 
+```bash
 POST /api/journals
 Authorization: Bearer <JWT_TOKEN>
 Content-Type: application/json
@@ -180,7 +193,11 @@ Content-Type: application/json
   "title": "My First Entry",
   "content": "Today I learned Spring Boot!"
 }
+
+```
+
 📸 Visuals
+
 Swagger UI
 
 <img width="1730" height="853" alt="1" src="https://github.com/user-attachments/assets/fbfc768b-cfc2-4373-803f-066580d8a6e9" />
@@ -192,7 +209,7 @@ Sample Postman Requests
 
 <img width="1729" height="389" alt="3" src="https://github.com/user-attachments/assets/ba0ad942-64ee-4f85-881f-62047b3af034" />
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please:
 
 Fork the repository
@@ -205,16 +222,22 @@ Push to your branch (git push origin feature-name)
 
 Open a Pull Request
 
-📝 License
+## 📝 License
 This project is licensed under the MIT License - see LICENSE file for details.
 
-📫 Contact :-
 
-
+## 👤 Author
 Tejas Gajanan Amzare
 
 
+## 📞 Contact
+
+For questions or support, please open an issue in the repository.
+
 📧 Email: tejasamzare@gmail.com
 
+🔗 LinkedIn: https://www.linkedin.com/in/tejas-amzare
+
+**Built with ❤️ using Spring Boot**
 
 🔗 LinkedIn: https://www.linkedin.com/in/tejas-amzare
