@@ -49,6 +49,8 @@ It’s a **showcase of modern backend development practices** and design pattern
 ---
 
 ## 📂 Project Structure
+
+```
 journal-app/
 ┣ src/main/java/com/journalapp/
 ┃ ┣ config/ # JWT Security config
@@ -61,7 +63,7 @@ journal-app/
 ┃ ┗ application.properties
 ┣ pom.xml
 ┗ README.md
-
+```
 
 
 ---
@@ -106,6 +108,7 @@ journal-app/
 
 ## 🏗 Architecture Overview
 
+```
 ┌──────────────┐
 │ Clients │ <-- Web / Postman
 └──────┬───────┘
@@ -126,6 +129,7 @@ journal-app/
 │ MongoDB │ (NoSQL Store)
 └───────────────┘
 
+```
 
 ---
 
@@ -226,6 +230,7 @@ Open a Pull Request
 This project is licensed under the MIT License - see LICENSE file for details.
 
 
+
 ## 👤 Author
 Tejas Gajanan Amzare
 
@@ -240,4 +245,3 @@ For questions or support, please open an issue in the repository.
 
 **Built with ❤️ using Spring Boot**
 
-🔗 LinkedIn: https://www.linkedin.com/in/tejas-amzare
